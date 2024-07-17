@@ -13,6 +13,8 @@ def bot():
     if "news" in incoming_message:
         U =('https://newsapi.org/v2/top-headlines?'
             'sources=techcrunch&'
+            'qInTitle="title search"'
+            'from=2024-07-03'
             'apiKey=efa134ebe84e45828eefc26a3cd61f07')
         r = requests.get(U)
         response_dict =r.json()
