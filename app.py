@@ -27,3 +27,4 @@ def bot():
         new  ="Sorry, i could not fetch any news for you!"
     msg.body(news)
     return str(resp)
+
